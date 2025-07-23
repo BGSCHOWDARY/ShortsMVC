@@ -5,7 +5,8 @@ using ShortsMVC.Models;
 
 
 
-public class ShortsController : Controller
+[EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
+    public class ShortsController : Controller
 
 {
     private ShortsDbContext db = new ShortsDbContext();
